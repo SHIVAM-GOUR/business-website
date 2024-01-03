@@ -5,7 +5,7 @@ const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
   useEffect(() => {
     setTheme('light')
-  },[setTheme])
+  },[setTheme]);
   return (
     <button aria-label='theme toggler'
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
