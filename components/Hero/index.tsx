@@ -14,17 +14,15 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-2 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Get your business website in just 10 days at very affordable
+                <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Get your business website in upto just 10 days at very affordable
                   price
-                  <br />
-                  {/* (Get 🆓 consultation) */}
                 </h1>
-                <p className="mb-6 md:text-4xl font-bold sm:text-4xl text-2xl">&quot;Get 🆓 consultation&quot;</p>
+                {/* <p className="mb-6 md:text-4xl font-bold sm:text-4xl text-2xl">&quot;Get 🆓 consultation&quot;</p> */}
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Get the Free consultation to understand does your business
-                  require a website, if yes then how can a website impact your
-                  business revenue growth then get your website. click button
+                  <b><i>Book your Free consultation</i></b> to understand why your business
+                  need a website, and how can a website can impact in your
+                   business revenue growth. <br/>click
                   below to conenct..👇
                   {/* Original */}
                   {/* Empower your business with our affordable and seamless
