@@ -23,7 +23,7 @@ const Hero = () => {
                   <b><i>Book your Free consultation</i></b> to understand why your business
                   need a website, and how can a website can impact in your
                    business revenue growth. <br/>click
-                  below to conenct..👇
+                  below to connect..👇
                   {/* Original */}
                   {/* Empower your business with our affordable and seamless
                   one-stop website solutions. designed to elevate your online
