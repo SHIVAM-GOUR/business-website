@@ -1,0 +1,31 @@
+'use client'
+
+import React from 'react'
+
+
+const Whatsapp = () => {
+
+
+  const handleClick = async () => {
+
+    // Check if WhatApp installed, if yes open whatsapp else open whatsapp web
+
+    if (navigator.userAgent.includes('WhatsApp')) {
+      // WhatsApp is installed
+      window.open(`whatsapp://send?phone=9109276735`)
+    } else {
+      // WhatsApp is not installed, open WhatsApp Web
+      window.open('https://web.whatsapp.com/send?phone=9109276735', '_blank');
+    }
+  }
+
+  return (
+    <>
+      <div className="inline-block rounded-sm bg-lime-600 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5" onClick={handleClick}>
+       connect on WhatsApp
+      </div>
+    </>
+  )
+}
+
+export default Whatsapp
