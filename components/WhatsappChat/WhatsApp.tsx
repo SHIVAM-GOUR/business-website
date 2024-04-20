@@ -21,10 +21,10 @@ const Whatsapp = () => {
 
   return (
     <>
-      <div className="inline-block rounded-sm bg-lime-600 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5" onClick={handleClick}>
-       connect on WhatsApp
+      <div className="inline-block rounded-sm bg-lime-600 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-lime-500 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 cursor-pointer" onClick={handleClick}>
+       Connect on WhatsApp
       </div>
-    </>
+    </> 
   )
 }
 
