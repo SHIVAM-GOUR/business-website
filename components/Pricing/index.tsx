@@ -17,7 +17,6 @@ const Pricing = () => {
           width="665px"
         />
          <div className="w-full " >
-         <h1 className=" flex items-center justify-center m-8 text-4xl ">Currency</h1>
 
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
@@ -74,11 +73,7 @@ const Pricing = () => {
             <OfferList text="Domain" status="active" />
             <OfferList text="Deployement" status="active" />
             <OfferList text="Server Handling" status="active" />
-            <OfferList text="24*7 support" status="active" />
-            <OfferList text="Backend Integration" status="inactive" />
-            <OfferList text="Upload Data Features " status="inactive" />
-            <OfferList text="Payment Gateway Intregation " status="inactive" />
-            <OfferList text="Signing/Signup Features " status="inactive" />
+            
           </PricingBox>
           <PricingBox
             packageName="Standard"
@@ -95,11 +90,11 @@ const Pricing = () => {
             <OfferList text="24*7 Support" status="active" />
             <OfferList text="Backend Integration" status="active" />
             <OfferList text="Upload Data Features " status="active" />
-            <OfferList text="Payment Gateway Intregation " status="inactive" />
-            <OfferList text="Signing/Signup Features " status="inactive" />
+            <OfferList text="Logo Design" status="active" />
+            
           </PricingBox>
           <PricingBox
-            packageName="Advance"
+            packageName="Advanced"
             price={ispricing? "₹ 25999" : "$ 249"}
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
           >
@@ -114,6 +109,7 @@ const Pricing = () => {
             <OfferList text="Upload Data Features " status="active" />
             <OfferList text="Payment Gateway Intregation " status="active" />
             <OfferList text="Signing/Signup Features " status="active" />
+            <OfferList text=" Logo Design" status="active" />
           </PricingBox>
         </div>
       </div>
