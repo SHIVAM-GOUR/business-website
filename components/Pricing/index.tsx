@@ -5,7 +5,7 @@ import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
+  const [ispricing,setisPricing] = useState(true)
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
@@ -16,31 +16,31 @@ const Pricing = () => {
           center
           width="665px"
         />
+         <div className="w-full " >
 
-        <div className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
           >
             <span
-              onClick={() => setIsMonthly(true)}
+              onClick={() => setisPricing(true)}
               className={`${
-                isMonthly
+                ispricing
                   ? "pointer-events-none text-primary"
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
-              Monthly
+              INR
             </span>
             <div
-              onClick={() => setIsMonthly(!isMonthly)}
+              onClick={() => setisPricing(!ispricing)}
               className="flex cursor-pointer items-center"
             >
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
                   className={`${
-                    isMonthly ? "" : "translate-x-full"
+                    ispricing ? "" : "translate-x-full"
                   } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
@@ -48,57 +48,68 @@ const Pricing = () => {
               </div>
             </div>
             <span
-              onClick={() => setIsMonthly(false)}
+              onClick={() => setisPricing(false)}
               className={`${
-                isMonthly
+                ispricing
                   ? "text-dark dark:text-white"
                   : "pointer-events-none text-primary"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
-              Yearly
+              USD
             </span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
             packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
+            price={ ispricing ?"₹ 4999" : "$ 99"}
+           
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="UIUX Design" status="active" />
+            <OfferList text="Website Designing" status="active" />
+            <OfferList text="Website Development" status="active" />
+            <OfferList text="Domain" status="active" />
+            <OfferList text="Deployement" status="active" />
+            <OfferList text="Server Handling" status="active" />
+            
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
+            packageName="Standard"
+            price={ispricing? "₹ 14999" :"$ 199"}
+           
             subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="UIUX Design" status="active" />
+            <OfferList text="Website Designing" status="active" />
+            <OfferList text="Website Development" status="active" />
+            <OfferList text="Domain" status="active" />
+            <OfferList text="Deployement" status="active" />
+            <OfferList text="Server Handling" status="active" />
+            <OfferList text="24*7 Support" status="active" />
+            <OfferList text="Backend Integration" status="active" />
+            <OfferList text="Upload Data Features " status="active" />
+            <OfferList text="Logo Design" status="active" />
+            
+          </PricingBox>
+          <PricingBox
+            packageName="Advanced"
+            price={ispricing? "₹ 25999" : "$ 249"}
+            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+          >
+            <OfferList text="UIUX Design" status="active" />
+            <OfferList text="Website Designing" status="active" />
+            <OfferList text="Website Development" status="active" />
+            <OfferList text="Domain" status="active" />
+            <OfferList text="Deployement" status="active" />
+            <OfferList text="Server Handling" status="active" />
+            <OfferList text="24*7 Support" status="active" />
+            <OfferList text="Backend Integration" status="active" />
+            <OfferList text="Upload Data Features " status="active" />
+            <OfferList text="Payment Gateway Intregation " status="active" />
+            <OfferList text="Signing/Signup Features " status="active" />
+            <OfferList text=" Logo Design" status="active" />
           </PricingBox>
         </div>
       </div>

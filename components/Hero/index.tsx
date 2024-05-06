@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Whatsapp from "../WhatsappChat/WhatsApp";
+
 
 const Hero = () => {
   return (
@@ -6,9 +8,9 @@ const Hero = () => {
       <section
         id="home"
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
-      >
+      > 
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="  -mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
@@ -23,11 +25,11 @@ const Hero = () => {
                   <b><i>Book your Free consultation</i></b> to understand why your business
                   need a website, and how can a website can impact in your
                    business revenue growth. <br/>click
-                  below to connect..👇
+                  below to connect..👇5
                   {/* Original */}
                   {/* Empower your business with our affordable and seamless
                   one-stop website solutions. designed to elevate your online
-                  presence effortlessly and drive success in the digital
+                  presence effortlessly and drive succ  FESXZ WSQA    ` `ess in the digital
                   landscape. */}
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -43,6 +45,8 @@ const Hero = () => {
                   >
                     Connect on Twitter
                   </Link>
+                  
+                  <Whatsapp/>
                 </div>
               </div>
             </div>

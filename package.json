@@ -20,8 +20,8 @@
     "sharp": "^0.33.1"
   },
   "devDependencies": {
-    "@types/node": "^20.8.9",
-    "@types/react": "^18.2.33",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
