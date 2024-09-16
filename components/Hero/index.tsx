@@ -16,17 +16,17 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Get your business website in upto just 10 days at very affordable
-                  price
+                <h1 className="mb-6  font-bold leading-tight  dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Get your business website in upto just 10 days at very affordable price
                 </h1>
-                {/* <p className="mb-6 md:text-4xl font-bold sm:text-4xl text-2xl">&quot;Get 🆓 consultation&quot;</p> */}
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  <b><i>Book your Free consultation</i></b> to understand why your business
+                <p className="mb-2 md:text-2xl font-bold sm:text-2xl text-xl">We craft stunning, functional websites that drive results.
+                "Let's Build Your Website Together" or "Get a Free Consultation"</p>
+                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl ">
+                  <i>Book your Free consultation</i> to understand why your business
                   need a website, and how can a website can impact in your
-                   business revenue growth. <br/>click
-                  below to connect..👇5
-                  {/* Original */}
+                   business revenue growth. <br/>click  
+                  below to connect..👇5 
+                  {/* Original */}  
                   {/* Empower your business with our affordable and seamless
                   one-stop website solutions. designed to elevate your online
                   presence effortlessly and drive succ  FESXZ WSQA    ` `ess in the digital

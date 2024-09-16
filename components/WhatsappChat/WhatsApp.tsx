@@ -12,10 +12,10 @@ const Whatsapp = () => {
 
     if (navigator.userAgent.includes('WhatsApp')) {
       // WhatsApp is installed
-      window.open(`whatsapp://send?phone=9109276735`)
+      window.open(`whatsapp://send?phone=7566687880`)
     } else {
       // WhatsApp is not installed, open WhatsApp Web
-      window.open('https://web.whatsapp.com/send?phone=9109276735', '_blank');
+      window.open('https://web.whatsapp.com/send?phone=7566687880', '_blank');
     }
   }
 

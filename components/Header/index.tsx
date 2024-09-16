@@ -117,6 +117,7 @@ const Header = () => {
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
+                            target="_blank"
                           >
                             {menuItem.title}
                           </Link>
